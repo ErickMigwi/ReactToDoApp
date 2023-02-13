@@ -37,10 +37,10 @@ useEffect(() => {
 
   }, [myArray]);
   let deleteTask = (id)=>{
-    setTodos(todos.filter((item)=> item.id !==id))
+    setMyArray(myArray.filter((item)=> item.id !==id))
 } 
 let completeTask = (id)=>{
-setTodos(todos.complete= true)
+    // setMyArray(myArray.map(myArray.complete => myArray.complete === true))
 }
  
     return (
@@ -50,7 +50,7 @@ setTodos(todos.complete= true)
       </nav>
       <div id='input'>
         <span>
-         <label htmlFor="">Task</label>
+         <label htmlFor="">Task:</label>
             <input id='task' type="text" value={task} onChange= {handleTaskChange}/>
         </span>
         <span>
@@ -58,21 +58,21 @@ setTodos(todos.complete= true)
             <textarea id='description' type="text" value={description} onChange= {handleDescriptionChange} />
         </span>
         <span>
-         <label htmlFor="">Prioiy</label>
+         <label htmlFor="">Priority:</label>
             <input id='priority' type="text" value={priority} onChange={handlePriorityChange} />
         </span>
       </div>
       <div id='displayTasks'>
-        {/* <p>Uncompleted Tasks {JSON.stringify(myArray)}</p> */}
-  
+        <p>Uncompleted Tasks {JSON.stringify(myArray)}</p>
+  console.log({myArray.id});
       <ul>
-      {todos.map(item => (
+      {myArray.map(item => (
         <li id='list' key={item.id}>
          <span>Tasks: {item.task}</span>
          <span>Description: {item.description}</span> 
          <span>Priority: {item.priority}</span>
          <br />
-         <button onClick={()=>completeTask(item.id)}>Complete</button>
+         <button onClick={completeTask(item.id)}>Complete</button>
          <button id='delete' onClick = {()=> deleteTask(item.id)}>Delete</button>
           </li>
       ))}
