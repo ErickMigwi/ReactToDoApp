@@ -1,0 +1,65 @@
+/* Qustion 1 */
+.box {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: blue;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 50%;
+  
+  z-index: 2;
+}
+#Q2{
+  margin-top: 400px;
+}
+#inline{
+  display: inline;
+}
+#box1{
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  padding: 10px;
+}
+#box2{
+  background-color:green;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  padding: 10px;
+}
+#box3{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  padding: 10px;
+}
+#inlineBlock{
+  display: inline-block;
+}
+#block{
+  display: block;
+  background-color: aqua;
+}
+#link{
+  color: red;
+  text-decoration: none;
+}
+#link :hover{
+  
+  color:blue;
+  text-decoration: underline;
+}

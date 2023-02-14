@@ -53,7 +53,7 @@ body{
     display: flex;
     width: 155px;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 #box2{
     
@@ -62,7 +62,7 @@ body{
     width: 155px;
     border: 2px solid grey;
     border-radius: 10px;
-    align-items: center;
+    justify-content: center;
 }
 #box3{
     
@@ -70,7 +70,7 @@ body{
     flex-direction: column;
     border: 2px solid rgb(205, 202, 202);
     width: 155px;
-    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     
 }
@@ -85,13 +85,14 @@ body{
     justify-content: space-between;
 }
 #mid{
-    margin-top: 100px;
+    margin-top: 80px;
     background-color: lightgray;
    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:hsl(213, 96%, 18%) ;
+    color:hsl(213, 96%, 18%);
+    justify-content: space-evenly;
 }
 #footer{
     display: flex;
@@ -105,4 +106,10 @@ body{
     width: 150px;
     color: white;
     border-radius: 15px;
+}
+
+
+ol li::marker {
+ 
+  font-size: 28px;
 }
